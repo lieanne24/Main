@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+ 
+{% block content %}
+  <h2 style="color:#404040">Sign up</h2>
+  
+  {%for message in form.su_username.errors%}
+    <div class ="flash">{{message}}</div>
+   {% endfor %} 
+  {% for message in form.su_firstname.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  {% for message in form.su_lastname.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  {% for message in form.su_email.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  {% for message in form.su_password.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+   
+  <form action="{{ url_for('signup') }}" method=post>
+    {{ form.hidden_tag() }}
+    </br>
+     <table>
+     
+     	<tr>
+    		<td>{{ form.su_username.label }}</td>
+    		<td>{{ form.su_username }}</td>
+    	</tr>	
+    </br>
+    	<tr>	
+    		<td>{{ form.su_firstname.label }}</td>
+    		<td>{{ form.su_firstname }}</td>
+    </br>
+     	<tr>
+    		<td>{{ form.su_lastname.label }}</td>
+    		<td>{{ form.su_lastname }}</td>
+    		</tr>	
+   </br>
+    	<tr>
+    		<td>{{ form.su_email.label }}</td>
+    		<td>{{ form.su_email }}</td>
+    		</tr>	
+    </br> 
+    	<tr>
+    		<td>{{ form.su_password.label }}</td>
+    		<td>{{ form.su_password }}</td>
+    		</tr>	
+    </br>
+    	<tr>
+    		<td>{{ form.confirm.label }}</td>
+   			<td>{{ form.confirm }}</td>
+   			</tr>	
+    <tr></tr>  <tr></tr>
+   		 <tr>
+    		<td>{{ form.submit }}</td>
+    		</tr>	
+  </form>
+     
+{% endblock %}

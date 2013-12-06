@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN"
+    "http://www.w3.org/TR/html5/html5.dtd">
+{% extends "layout.html" %}
+
+{% block content %}
+  <h2>Site Administration</h2>
+ {% for message in form.search.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+
+  <form action="{{ url_for('Admin') }}" method=post>
+ <br />
+  {{form.search.label}}
+ {{form.search}}
+ <br />
+ {{form.submit}}
+</form>
+ 
+{% endblock %}

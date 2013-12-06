@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN"
+    "http://www.w3.org/TR/html5/html5.dtd"
+    >
+{% extends "layout.html" %}
+ 
+{% block content %}
+  
+<h2 style="color:#404040;">Edit Profile </h2>
+
+   
+<h3 style="color:#404040;">{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      {{ message }}
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}</h3>
+  <form action="{{ url_for('editProfile') }}" method=post>
+    {% for message in form.change_password.errors %}
+    <div class="flash">{{ message }}</div>
+  {% endfor %}
+
+
+  
+    {{ form.hidden_tag() }}
+     <table>
+     
+     	<tr>
+     		<td>{{ form.firstname.label }}:</td>
+    		<td> {{ form.firstname }}</td>
+    	</tr>
+     <br/>
+     	<tr>
+     		<td>{{ form.lastname.label }}:</td>
+     		<td>{{ form.lastname}}</td>
+     	</tr>
+     <br/>
+     	 <tr>
+    		<td>{{ form.about.label}}</td>
+    		<td>{{form.about(cols = 23, rows = 5)}}</td>
+ 		</tr>  
+   <br/>
+   
+ 
+     
+     	<tr>
+     		<td>{{ form.change_password.label }}:</td>
+    		<td> {{ form.change_password }}</td>
+    	</tr>
+     <br/>
+     	<tr>
+    		<td>{{ form.confirm.label }}</td>
+   			<td>{{ form.confirm }}</td>
+   <tr>
+     
+    <td>{{ form.submit }}</td>
+    </tr>
+  </table>
+  </form>
+</div>
+
+     
+{% endblock %}

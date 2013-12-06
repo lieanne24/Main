@@ -1,0 +1,24 @@
+{% for reply in comment.replies %}
+<div class="reply">
+<ul class="comment_reply">
+	<li><a href ="{{url_for('profile_by_id',user_id=comment.user_id)}}"> {{ reply.user_name }}</a> </li>
+	<li>Posted at: {{ reply.create_time }} </li>
+	<li>Upvotes: {{reply.upvotes}} </li>
+	<li>Downvotes: {{reply.downvotes}} </li>
+	<li>Rating: {{reply.rating}} </li>
+	<li>Vote!
+		<img src={{url_for('serve_image',filename='icons/vote_down.png')}}>
+		<img src={{url_for('serve_image',filename='icons/vote_neutral.png')}}>
+		<img src={{url_for('serve_image',filename='icons/vote_up.png')}}>
+	</li>
+</ul>
+<br />
+<br />
+
+{% filter markdown %}
+<p class="comment_body">{{reply.reply_text}}</p>
+</br>
+{% endfilter %}
+</div>
+
+{% endfor %}

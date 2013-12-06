@@ -1,0 +1,15 @@
+	{% for summary in SummaryList %}
+		</br>
+		<div class = "jumbo">
+			<h3 class = "article_title">
+			<a class="article_title" href="{{url_for('show_article', article_id=summary.article_id) }}" style="text-decoration:none; color:black;">
+			 {{ summary.title }} </a> </h3>
+			 <ul id="summary">
+			 <li><strong> Author: </strong> <a href = "{{url_for('profile_by_id',user_id=summary.author_id)}}"> {{summary.author_name }} </a></li>
+			 <li><strong> Publication Date: </strong> {{summary.create_time }}</li>
+			 </ul>
+			 
+			<h5 style="text-decoration:none; font-size:1em; margin-top:0.1in;clear:both;">
+			{% filter markdown %}{{summary.body}} {% endfilter %}  </h5>
+		</div>
+	{% endfor %}

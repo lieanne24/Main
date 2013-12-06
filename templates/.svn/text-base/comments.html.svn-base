@@ -1,0 +1,6 @@
+<!-- Upvote/downvote icons sourced from www.iconfinder.com -->
+{% for comment in article.commentList %}
+	<div class="comment" id=comment_{{comment.comment_id}}>	
+{% include 'comments_single.html' %}
+	</div>
+{% endfor %}

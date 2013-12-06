@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN"
+    "http://www.w3.org/TR/html5/html5.dtd"
+    >
+<html>
+  <head>
+    <title>The NEWs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/comments.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='jquery.blockUI.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='scripts.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='ajax_scripts.js') }}"></script>
+    
+  </head>
+  <body>
+   
+  <header>
+  <div class="container">
+    <h1><a class="logo" href="{{ url_for('home') }}">The Garlic</a></h1>
+    <strong><nav>
+      <ul class="menu">
+      	
+      	
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        
+        {% if 'user_id' in session %}
+          {% if 'contributor' in session['roles'] %}
+          	<li><a href="{{ url_for('upload_article') }}"> Upload </a></li>
+          {% endif %}
+          <li><a href="{{ url_for('profile') }}">Profile</a></li>
+          <li><a href="{{ url_for('signout') }}">Sign Out</a></li>
+          {% else %}
+          <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+          <li><button id="login" class="myButton">Login</button></li>
+          {% endif %}
+
+    </nav></strong>
+  </div>
+</header>
+  <div class="coverContainer">
+   </br> <h2 class="hometagline">The Garlic</h2>
+    <h3 class="hometagline">You can get anything from us..<h3>
+  </div>
+
+<div id="nav">
+<ul>
+ 
+{% for cat in categories %}
+	<li><a href="{{ url_for('show_category', category=cat[0]) }}" style="width:{{ cat[1] }}%">{{ cat[0] }}</a>
+{% endfor %}
+
+</div>
+
+</ul>
+     
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+    </div>
+     
+	<div style="display:none" id="loginForm">
+		<!--
+		<a href="{{ url_for('signin') }}" class="first">  Sign In </a>
+		-->
+		{% include 'signin_embedded.html' %}
+	</div>
+     
+  </body>
+</html>

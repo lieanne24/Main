@@ -1,0 +1,28 @@
+	<div class="single_comment"><ul class="comment_header">
+		<li><a href ="{{url_for('profile_by_id',user_id=comment.user_id)}}"> {{ comment.user_name }}</a> </li>
+		<li>Posted at: {{ comment.create_time }} </li>
+		<li>Upvotes: {{comment.upvotes}} </li>
+		<li>Downvotes: {{comment.downvotes}} </li>
+		<li>Rating: {{comment.rating}} </li>
+		<li>Vote!
+			<img src={{url_for('serve_image',filename='icons/vote_down.png')}}>
+			<img src={{url_for('serve_image',filename='icons/vote_neutral.png')}}>
+			<img src={{url_for('serve_image',filename='icons/vote_up.png')}}>
+		</li>
+	</ul>
+	<br />
+	<br />
+
+{% filter markdown %}
+<p class="comment_body">{{comment.comment_text}}</p>
+{% endfilter %}
+</br>
+	</div>
+
+	<div class="comment_reply">
+{% include 'comment_replies.html' %}
+	{% set selector = '#comment_' ~ comment.comment_id %}
+	{% set url_in = url_for('get_comment_replies',comment_id=comment.comment_id) %}
+	
+	<button type="button" onClick= "get_all_replies( '{{url_in}}', '{{selector}}' )" >Show all replies</button>
+	</div>

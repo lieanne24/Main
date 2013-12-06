@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/109/trunk/Main/NewsServer/templates
+END
+article_display.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/106/trunk/Main/NewsServer/templates/article_display.html
+END
+signup.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/83/trunk/Main/NewsServer/templates/signup.html
+END
+comments.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/86/trunk/Main/NewsServer/templates/comments.html
+END
+comments_single.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/105/trunk/Main/NewsServer/templates/comments_single.html
+END
+test.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/93/trunk/Main/NewsServer/templates/test.html
+END
+admin.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/101/trunk/Main/NewsServer/templates/admin.html
+END
+layout.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/73/trunk/Main/NewsServer/templates/layout.html
+END
+profile.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/95/trunk/Main/NewsServer/templates/profile.html
+END
+comment_replies.html
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/103/trunk/Main/NewsServer/templates/comment_replies.html
+END
+signin_embedded.html
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/81/trunk/Main/NewsServer/templates/signin_embedded.html
+END
+comment_form.html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/98/trunk/Main/NewsServer/templates/comment_form.html
+END
+signin.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/49/trunk/Main/NewsServer/templates/signin.html
+END
+upload.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/109/trunk/Main/NewsServer/templates/upload.html
+END
+admin_1.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/101/trunk/Main/NewsServer/templates/admin_1.html
+END
+home.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/72/trunk/Main/NewsServer/templates/home.html
+END
+editProfile.html
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/88/trunk/Main/NewsServer/templates/editProfile.html
+END
+article_summaries.html
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/97/trunk/Main/NewsServer/templates/article_summaries.html
+END

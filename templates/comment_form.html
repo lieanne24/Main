@@ -1,0 +1,13 @@
+{% set form = create_form_comment() %}
+
+{% for message in form.commentText.errors %}
+    <div class="flash">{{ message }}</div>
+{% endfor %}
+
+<form method="POST" action="{{ url_for('add_comment', article_id=1) }}" >
+	{{ form.hidden_tag() }}
+	{{ form.commentText.label }}
+	<br />
+	{{ form.commentText(size = 500) }}
+	<input type="submit" value="Post comment">
+</form>

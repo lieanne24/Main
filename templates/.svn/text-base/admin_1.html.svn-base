@@ -1,0 +1,8 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5//EN"
+    "http://www.w3.org/TR/html5/html5.dtd">
+{% extends "layout.html" %}
+
+<htmL>
+{{ email }}
+
+</html>

@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+  
+  <div class="article_list" id="article_list">
+	{% include 'article_summaries.html' %}
+  </div>
+  <button type="button" onClick= "get_more_articles( '{{ url_for("get_article_summaries",category=category) }}' )" >Get more articles</button>
+{% endblock %}

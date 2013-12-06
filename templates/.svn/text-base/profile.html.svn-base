@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!--
+ Celene's addition to profile layout
+ -->
+  <div class="container">
+   	<div class ="info">
+    	<h2 class="profile">{{ user.username }}'s profile </h2>
+  		  </br>
+			<p class="profile>
+  				 {%if user.user_id == session['user_id'] %}
+      				 email :<text style = "padding-left:10px">{{user.email}}</text> </p > 
+     			  {% endif %}
+     			<p class="profile>
+    				 name :<text style = "padding-left:10px">{{user.first_name}} {{user.last_name}}</text></p>
+    			<p class="profile">	 
+  					 about me :</p><p style = "padding-left:40px">{{user.about_me}}</p >
+  				<p class="profile">
+   					created :<text style = "padding-left:10px">{{user.create_time}} </p >
+       
+   						{%if user.user_id == session['user_id'] %}
+     					 my roles : <br />
+      					 	{% for role in user.roles %}
+       					  	{{role}}<br/>
+       						{% endfor %}
+   						{% endif %}
+   
+   		</div>
+		  <div class= "writen" ><br/></br>
+				  <h2 class="profile">  Written Articles </h2>
+					     
+					      {% for article in articles %}
+					       	<p style="font-size:20px;"> <a href = "{{url_for('show_article', article_id=article[0]) }}" style="text-decoration:none; "> {{article[1]}} </a></p>
+					      {% endfor %}
+					  	<br/>
+					   	<br/>
+					    <br/>
+				     	{%if user.user_id == session['user_id'] %}
+				    		<h3 style="font-size:20px;text-align:center;"><a href="{{url_for('editProfile')}}"style="text-decoration:none;">Edit Profile</a></h3>
+				    	{% endif %}
+			  </div>
+		 </div> 
+		{% endblock %}

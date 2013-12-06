@@ -1,0 +1,348 @@
+body {
+  margin:0 ;
+  background-color: cream;
+  font-size: 12px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:dimgray;
+}
+ 
+/*
+ * Create dark grey header with a white logo
+ */
+  
+header {
+  background-color: #2B2B2B;
+  height: 35px;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 10px;
+}
+ 
+header a.logo {
+  margin: 0;
+  font-size: 1em;
+  color: #eee;
+  text-transform: uppercase;
+  float: left;
+  text-decoration:none;
+  
+}
+ 
+header a.logo:hover {
+ background-color: transparent;
+  text-decoration: none;
+}
+ 
+/*
+ * Center the body content
+ * Change home div box
+ * Date:Dec 2, 2013
+ * contributor:Celene
+ */
+ 
+ 
+ /****
+ new div for home page "the garlic"
+ contributor:celene
+ ****/
+  
+.coverContainer {
+  width: 940px;
+  height: 185px;
+  margin: 0 auto;
+  background-image:url('http://www.andypost.com/data/photos/513_107_andy_post_food_photography_old_garlic.jpg');
+  background-repeat: no-repeat;
+  padding: 10px 0 30px 0;
+  background-size:940px 500px;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  
+}
+ 
+div.jumbo {
+  padding: 10px 15px 10px 15px;
+  background-color: #ECECEC ;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+         
+}
+
+h2.profile{
+text-align:center;
+color:#404040; 
+font-size: 4em;
+
+
+} 
+div.info{
+float:left;
+color:#404040;  ;
+width:400px;
+font-size:20px;
+letter-spacing:1px;
+padding-bottom:100px;
+
+}
+div.writen{
+text-size:8px;
+float:right;
+width:400px;
+padding-bottom:100px;
+color:#404040; 
+
+
+}
+ /******
+ * Change home <h2>
+ * Date:Dec 2, 2013
+ * contributor:Celene
+ ******/
+h2 {
+  font-size: 2.5em;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: left;
+  letter-spacing: -2px;
+  color:white;
+}
+
+
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+ 
+.menu li {
+  display: inline;
+}
+ 
+.menu li + li {
+  margin-left: 35px;
+}
+ 
+.menu li a {
+  color: #999;
+  text-decoration: none;
+}
+form {
+  width: 300px;
+  background-color: #fafafa;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  border: 3px solid #cccccc;
+  padding: 2px;
+  font-size: 1.1em;
+  margin-left: 9%;
+  text-align:left;
+}
+form input#email{
+  margin-left: 9%;
+}
+form input#password {
+  margin-bottom: 30px;
+}
+form input#submit{
+  margin-left: 30%;
+}
+
+.sign{
+ text-align: right;
+ color: red;
+}
+
+/*
+ * Michael's additions - should probably be replaced with something less ugly!
+ */
+ 
+ div.article_summary {
+	text-align: left;
+		
+}
+/*changes div,article links, article title to much site scheme
+  contributor: celene	
+*/
+div.article
+{
+  padding: 10px 15px 10px 15px;
+  background-color: #eeeeee;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+h3.article_title {
+	text-align: left;
+	font-size:25px ;
+	padding-bottom 0;
+	margin-bottom:0in;
+	color:#060604 ;
+	
+}
+
+a.article_title:link{color:black;}
+a.article_title:visited{color:gray;}
+a.article_title:hover{color:LightSalmon;}
+a.article_title:active{color:red;}
+
+	
+ 
+/*
+ * End of Michael's additions
+ */
+ 
+ 
+ /*
+ * Ariel's nav bar
+ */
+ 
+ 
+
+#nav 
+{
+	width:100%;
+	background-color:white;
+	min-width: 940px;
+	font-weight: bold;
+	font-family: Arial, Verdana;
+}
+
+#nav ul {
+	text-align:center;
+	list-style-type: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	background-color:white;
+	width: 940px;
+}
+
+#nav ul li {
+	display:inline;
+	border-bottom: 1px black solid;
+	border-top:1px black solid;
+
+
+
+}
+
+/*****
+* Did some color scheme changes to match site theme
+* Date: Dec 2, 2013
+* Contributor: Celene
+****/
+
+#nav ul li a { 
+	color:black;
+	text-decoration: none;
+	display: block;
+	width: 110px;
+	float: left;
+	border-bottom: 1px black solid;
+	border-top:1px black solid;
+
+	background-color: white;
+
+}
+
+
+#nav ul li a:hover {
+ color:white;
+ background-color:gray;
+ border-top-left-radius:1px;
+ border-top-right-radius:1px;
+ -webkit-border-top-left-radius:1px;
+ -webkit-border-top-right-radius:1px;
+ -moz-border-top-left-radius:1px;
+  -moz-border-top-right-radius:1px;
+	
+}
+
+
+li.last {
+	float:none;
+}
+
+ /*********
+ * Additional css
+ * Date: Dec 2, 2013
+ * Contributor: Celene
+ ********/
+ 
+ a:hover
+ {
+ color:black;
+ background-color:white;
+ border-top-left-radius:2px;
+ border-top-right-radius:2px;
+ -webkit-border-top-left-radius:2px;
+ -webkit-border-top-right-radius:2px;
+ -moz-border-top-left-radius:2px;
+  -moz-border-top-right-radius:2px;
+ }
+ 
+ h2.hometagline {
+  font-size: 3.5em;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-align: left;
+  letter-spacing: -2px;
+  color:white;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+  text-align: left;
+  letter-spacing: -1px;
+  color: white;
+}
+ 
+ h3.hometagline {
+  font-size: 1.4em;
+  font-weight: normal;
+  padding-left:1em;
+  margin-top: 0px;
+  text-align: left;
+  letter-spacing: -1px;
+  color: ghostwhite;
+ }
+  
+ h4 {
+ line-height:30px;
+ line-size:550%;
+ font-weight:normal;
+ }
+
+pre{  
+    text-align: justify;
+    white-space: normal;
+    whitewhite-space: pre-wrap;       /* css-3 */  
+	whitewhite-space: -pre-wrap;      /* Opera 4-6 */  
+	whitewhite-space: -o-pre-wrap;    /* Opera 7 */  
+	word-wrap: break-word;       /* Internet Explorer 5+ */  
+	whitewhite-space: -moz-pre-wrap;  /* Older Versions of Mozilla */  
+	} 
+
+ 
+ form.upload
+ {
+   width: 800px;
+  background-color: #fafafa;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  border: 3px solid #cccccc;
+  padding: 4px;
+  font-size: 1.8em;
+  margin-left: 9%;
+  text-align:left;
+ }
+ 

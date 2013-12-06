@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+ 
+{% block content %}
+  <h2>Upload Article</h2>
+  
+  <form class="upload"action="{{ url_for('upload_article') }}" method=post>
+ 
+   
+    <table>
+    <tr>
+    <td>
+    {{ form.title.label }}:</td>
+    <td>{{ form.title (size= 110)}}</td>
+     <tr>
+        </tr>
+   <td>	<label>Category:</label>
+	<select name='category'>
+	 {% for c in category %}
+	<option>{{c[0]}}</option>
+	{% endfor %}
+	</select>  </td>
+     </tr>
+  <tr>
+     
+   	<td>{{ form.body.label }}:</td>
+   	<td>{{ form.body (cols = 80, rows = 30)}}</td>
+        </tr> 
+      <tr>
+ 
+    <td><label>Upload Image</label></td>
+    <td><input type=text name=image size= 110></td>
+      </tr> 
+  <tr>
+    <td>{{ form.submit }}</td>
+    </tr>
+  </form>
+     
+{% endblock %}

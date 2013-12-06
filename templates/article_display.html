@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+
+</br></br>
+  <div class="article">
+    <p>
+	<h3 class="article_title">{{ article.title }}</h3>
+	<h5>By: <a href = "{{url_for('profile_by_id',user_id=article.author_id)}}"> {{article.author_name}} </a> </h4>
+	<h5 style="margin-top:0in">Publication date: {{ article.pub_date }}</h5>
+	
+	</p>
+	
+	<p class="article_body">
+{% filter markdown %}
+{{ article.body_text }}
+{% endfilter %}
+	</p>	
+  </div>
+<br />
+<div class='comment_box'>
+<h3 class='comment_title'>Here there be Comments!</h3>
+
+
+{% set url_rating= url_for('get_sorted_comments', article_id=article.article_id, order='rating') %}
+{% set url_oldest= url_for('get_sorted_comments', article_id=article.article_id, order='oldest') %}
+{% set url_latest= url_for('get_sorted_comments', article_id=article.article_id, order='latest') %}
+
+Sort comments by:
+<button type="button" onClick= "sort_comments( '{{url_rating}}', 'rating' )" >Rating</button>
+<button type="button" onClick= "sort_comments( '{{url_oldest}}', 'oldest' )" >Oldest First</button>
+<button type="button" onClick= "sort_comments( '{{url_latest}}', 'latest' )" >Newest First</button>
+
+<div id="comment_section">
+
+{% set commentList = article.commentList %}
+{% include 'comments.html' %}
+
+</div> <!-- End comment section -->
+
+{% set url = url_for('get_article_comments', article_id=article.article_id) %}
+<button type="button" onClick= "get_more_comments( '{{url}}' )" >Get more comments</button>
+</div> <!-- End jumbo -->
+{% endblock %}
