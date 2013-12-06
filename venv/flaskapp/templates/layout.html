@@ -1,0 +1,14 @@
+<!doctype html>
+ <title>{% block title %}Welcome{% endblock %} | NewsPortal</title>
+ <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+ <div class=page>
+   <h1>news</h1>
+   <div class=navigation>
+
+     <a href="{{ url_for('register') }}">sign up</a> 
+ </div>
+  {% for message in get_flashed_messages() %}
+    <div class=flash>{{ message }}</div>
+  {% endfor %}
+  {% block body %}{% endblock %}
+</div>
