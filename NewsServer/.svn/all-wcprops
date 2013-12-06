@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/110/trunk/Main/NewsServer
+END
+route_upload.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/110/trunk/Main/NewsServer/route_upload.py
+END
+route_home.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/44/trunk/Main/NewsServer/route_home.py
+END
+route_profile.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/88/trunk/Main/NewsServer/route_profile.py
+END
+route_categories.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/44/trunk/Main/NewsServer/route_categories.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/73/trunk/Main/NewsServer/__init__.py
+END
+route_ajax_get_articles.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/44/trunk/Main/NewsServer/route_ajax_get_articles.py
+END
+route_signup.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/52/trunk/Main/NewsServer/route_signup.py
+END
+route_images.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/26/trunk/Main/NewsServer/route_images.py
+END
+route_ajax_sort_comments.py
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/93/trunk/Main/NewsServer/route_ajax_sort_comments.py
+END
+routes.py
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/98/trunk/Main/NewsServer/routes.py
+END
+route_show_article.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/71/trunk/Main/NewsServer/route_show_article.py
+END
+route_ajax_get_comments.py
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/93/trunk/Main/NewsServer/route_ajax_get_comments.py
+END
+news_globals.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/98/trunk/Main/NewsServer/news_globals.py
+END
+route_signout.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/52/trunk/Main/NewsServer/route_signout.py
+END
+route_admin.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/101/trunk/Main/NewsServer/route_admin.py
+END
+route_signin.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/61/trunk/Main/NewsServer/route_signin.py
+END
+route_ajax_get_all_replies.py
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/87/trunk/Main/NewsServer/route_ajax_get_all_replies.py
+END
+route_ajax_add_comment.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/98/trunk/Main/NewsServer/route_ajax_add_comment.py
+END
